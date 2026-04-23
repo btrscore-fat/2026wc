@@ -25,8 +25,8 @@ st.markdown("基于机器学习模型预测比赛结果并模拟完整赛程。"
 def load_team_data():
     """加载球队数据，并缓存以提高性能"""
     try:
-        # 根据您的推送记录，正确的文件是 team_stats.json
-        data_path = Path("data/team_stats.json")
+        # 根据您的最新要求，使用 fifa_wc_48_sorted.json
+        data_path = Path("data/fifa_wc_48_sorted.json")
         if not data_path.exists():
             st.error(f"❌ 找不到数据文件: {data_path.resolve()}")
             st.stop()
